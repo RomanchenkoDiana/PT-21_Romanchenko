@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description"
+          content="Стати учасником. Hotel VIP Club. Детальніше. Зв'язок із нами. Контакти. Адреса. Україна, Львівська обл., м.Трускавець, вул. Городище, 8.">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<script src="script.js" defer></script>
+<script src="popup.js" defer></script>
+<script src="active.js" defer></script>
+
+
+<header>
+        <div class="head">
+            <div class="logo">
+                <img src="img/header-photo-01.jpg" alt="Логотип 01">
+            </div>
+
+            <div class="header-container-nav">
+                <nav class="header-container">
+                    <div class="burger">
+                        <div class="header-hotel">
+                            <li><a href="#hotel">Готель</a>
+                                <ul class="menu-hotel">
+                                    <li><a href="#">Класік</a></li>
+                                    <li><a href="#">Напівлюкс</a></li>
+                                    <li><a href="#">Люкс</a></li>
+                                </ul>
+                            </li>
+                        </div>
+
+                        <div class="header-restaurant">
+                            <li><a href="#restaurant">Ресторан</a>
+                                <ul class="menu-restaurant">
+                                    <li><a href="#">Бар</a></li>
+                                    <li><a href="#">Літня тераса</a></li>
+                                </ul>
+                            </li>
+                        </div>
+
+                        <div class="header-med">
+                            <li><a href="#medcenter">Медичний центр</a>
+                                <ul class="menu-med">
+                                    <li><a href="#">Консультації</a></li>
+                                    <li><a href="#">Естетична медицина</a></li>
+                                    <li><a href="#">Лабораторія</a></li>
+                                    <li><a href="#">Реабілітація</a></li>
+                                </ul>
+                            </li>
+                        </div>
+                    </div>
+
+                    <div class="icon-location-01">
+                        <a href="#contacts"><img src="img/icon-location-header.png" alt="Іконка локації 01"></a>
+                    </div>
+
+                    <div class="UK none">
+                        <a href="#">UK</a>
+                    </div>
+
+                    <button class="button-zabronuvaty none open-popup">Забронювати</button>
+
+                    <div id="btn_wrapper" class="btn_wrapper">
+                        <div class="menu-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <div class="menu">
+                            <nav>
+                                <ul class="menu-list">
+                                    <div class="header-hotel menu-list1">
+                                        <li><a href="#hotel">Готель</a>
+                                            <ul class="menu-hotel">
+                                                <li><a href="#">Класік</a></li>
+                                                <li><a href="#">Напівлюкс</a></li>
+                                                <li><a href="#">Люкс</a></li>
+                                            </ul>
+                                        </li>
+                                    </div>
+
+                                    <div class="header-restaurant menu-list2">
+                                        <li><a href="#restaurant">Ресторан</a>
+                                            <ul class="menu-restaurant">
+                                                <li><a href="#">Бар</a></li>
+                                                <li><a href="#">Літня тераса</a></li>
+                                            </ul>
+                                        </li>
+                                    </div>
+
+                                    <div class="header-med menu-list3">
+                                        <li><a href="#medcenter">Медичний центр</a>
+                                            <ul class="menu-med">
+                                                <li><a href="#">Консультації</a></li>
+                                                <li><a href="#">Естетична медицина</a></li>
+                                                <li><a href="#">Лабораторія</a></li>
+                                                <li><a href="#">Реабілітація</a></li>
+                                            </ul>
+                                        </li>
+                                    </div>
+                                    <div class="btn-rezerv">
+                                        <button class="button-zabronuvaty open-popup">Забронювати</button>
+                                    </div>
+
+                                </ul>
+
+                            </nav>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="photo-hotel-01">
+            <img src="img/header-photo-02.jpg" alt="Фото готелю 01">
+        </div>
+    <div id="popup__bg"  class="popup__bg">
+        <form class="popup">
+            <img src="img/close.png" class="close-popup">
+            <label>
+                <input type="text" name="name">
+                <div class="label__text">
+                    Ім'я
+                </div>
+            </label>
+            <label>
+                <input type="tel" name="tel">
+                <div class="label__text">
+                    Номер телефон
+                </div>
+            </label>
+            <label>
+                <input type="date" id="date" name="date"/>
+                <div class="label__text">
+                    Дата заїзду
+                </div>
+
+            </label>
+            <button type="submit">Забронювати</button>
+        </form>
+    </div>
+</header>
+
+<main>
+    <section>
+        <div class="znayomstvo">
+            <div class="text">
+                <h2>Знайомство</h2>
+                <h3>П'ЯТИЗІРКОВИЙ ЛІКУВАЛЬНО-КУРОРТНИЙ КОМПЛЕКС</h3>
+                <p>Комплекс розташований в самому серці Прикарпаття, в м.Трускавці -<br>всесвітньо відомому
+                    бальнеологічному курорті.<br>
+                    “Rixos-Prykarpattya” –<br>це поєднання висококласного сервісу, вишуканого інтер’єру і
+                    комфортного<br>відпочинку з професійним медичним супроводом. Це унікальне місце з гірськими<br>пейзажами,
+                    кристально чистим повітрям і цілющими джерелами<br>мінеральних вод було створено самою природою для
+                    заспокоєння і відновлення сил.
+                </p>
+                <button class="button-details">Детальніше</button>
+            </div>
+            <div class="photo-hotel-02">
+                <img src="img/main-znaiomstvo-photo.jpg" alt="Фото готелю 02">
+            </div>
+        </div>
+
+        <video  poster="./img/bg.png" id="player" width="100%" height="auto" autoplay muted loop>
+            <source src="./img/bg.mp4" type="video/mp4" >
+        </video>
+    </section>
+
+    <section>
+        <div class="gallery">
+            <div class="b-gallery">
+                <button class="button-gallery">Переглянути галерею</button>
+            </div>
+            <div class="photo-hotel-03">
+                <img src="img/main-gallery-photo.jpg" alt="Фотогалерея">
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="Rooms">
+            <div class="nazva">
+                <h2 id="hotel">Готель</h2>
+                <h3>МАКСИМАЛЬНИЙ КОМФОРТ</h3>
+            </div>
+
+            <div class="photo-hotel-04">
+                <img src="img/main-hotel-photo.jpg" alt="Фото номеру">
+            </div>
+
+            <div class="description">
+
+                <h4 class="double-room">Двомісний номер</h4>
+                <h4 class="classic">Класік</h4>
+
+                <div class="details-description">
+                    <div class="guests">
+                        <div class="icon-guests">
+                            <img src="img/icon-guests-hotel.png" alt="Іконка к-ть гостей">
+                        </div>
+                        <h4>2 гостей</h4>
+                    </div>
+                    <div class="space">
+                        <div class="icon-space">
+                            <img src="img/icon-space-hotel.png" alt="Іконка площі">
+                        </div>
+                        <h4>Площа 28 м²</h4>
+                    </div>
+                    <div class="room">
+                        <div class="icon-rooms">
+                            <img src="img/icon-rooms-hotel.png" alt="Іконка кімнати">
+                        </div>
+                        <h4>1 кімната</h4>
+                    </div>
+                </div>
+                <button class="button-pereglanuty">Переглянути</button>
+            </div>
+
+            <button class="button-rooms rooms_btn  " id="rooms_btn">Усі номери</button>
+        </div>
+
+        <div class="rooms_wrapper  active  rooms" >
+            <div class="rooms_block">
+                <img class="rooms_img" src="./img/room1.jpg" alt="lux room">
+                <div class="rooms_text">
+
+                    <div class="rooms_title">
+                        Люкс
+                    </div>
+
+                    <div class="details-description rooms_footer ">
+                        <div class="guests">
+                            <div class="icon-guests">
+                                <img src="img/icon-guests-hotel.png" alt="Іконка к-ть гостей">
+                            </div>
+                            <h4>2 гостей</h4>
+                        </div>
+                        <div class="space">
+                            <div class="icon-space">
+                                <img src="img/icon-space-hotel.png" alt="Іконка площі">
+                            </div>
+                            <h4>Площа 28 м²</h4>
+                        </div>
+                        <div class="room">
+                            <div class="icon-rooms">
+                                <img src="img/icon-rooms-hotel.png" alt="Іконка кімнати">
+                            </div>
+                            <h4>1 кімната</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="rooms_block">
+                <img class="rooms_img" src="./img/room2.jpg" alt="classic room">
+                <div class="rooms_text">
+
+                    <div class="rooms_title">
+                        Класік
+                    </div>
+
+                    <div class="details-description rooms_footer ">
+                        <div class="guests">
+                            <div class="icon-guests">
+                                <img src="img/icon-guests-hotel.png" alt="Іконка к-ть гостей">
+                            </div>
+                            <h4>2 гостей</h4>
+                        </div>
+                        <div class="space">
+                            <div class="icon-space">
+                                <img src="img/icon-space-hotel.png" alt="Іконка площі">
+                            </div>
+                            <h4>Площа 22 м²</h4>
+                        </div>
+                        <div class="room">
+                            <div class="icon-rooms">
+                                <img src="img/icon-rooms-hotel.png" alt="Іконка кімнати">
+                            </div>
+                            <h4>1 кімната</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="rooms_block">
+                <img class="rooms_img" src="./img/room3.jpg" alt="conect room">
+                <div class="rooms_text">
+
+                    <div class="rooms_title">
+                        Конект
+                    </div>
+
+                    <div class="details-description rooms_footer ">
+                        <div class="guests">
+                            <div class="icon-guests">
+                                <img src="img/icon-guests-hotel.png" alt="Іконка к-ть гостей">
+                            </div>
+                            <h4>4 гостей</h4>
+                        </div>
+                        <div class="space">
+                            <div class="icon-space">
+                                <img src="img/icon-space-hotel.png" alt="Іконка площі">
+                            </div>
+                            <h4>Площа 28 м²</h4>
+                        </div>
+                        <div class="room">
+                            <div class="icon-rooms">
+                                <img src="img/icon-rooms-hotel.png" alt="Іконка кімнати">
+                            </div>
+                            <h4>2 кімната</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <div class="Restaurant">
+            <div class="nazva-restaurant">
+                <h2 id="restaurant">Ресторан</h2>
+                <h3>ЗАТИШОК ТА НАСОЛОДА</h3>
+            </div>
+
+            <div class="two-photos">
+                <div class="photo-restaurant-01">
+                    <img src="img/main-restaurant-photo-01.jpg" alt="Фото ресторану 01">
+                </div>
+                <div class="photo-restaurant-02">
+                    <img src="img/main-restaurant-photo-02.jpg" alt="Фото ресторану 02">
+                </div>
+                <div class="photo-restaurant-03">
+                    <img src="img/main-restaurant-photo-03.jpg" alt="Фото ресторану 03">
+                </div>
+            </div>
+        </div>
+
+        <p class="text-restaurant">Основний і найбільший ресторан комплексу на 480 посадочних місць. Меню ресторану
+            включає як страви класичної європейської кухні, так і страви різних кухонь світу.<br>Ресторан працює у
+            форматі “шведської лінії” та пропонує гостям широке розмаїття холодних закусок, перших і основних страв,
+            дієтичних страв, десертів і безалкогольних напоїв.<br>Також гості можуть додатково вибрати алкогольні і
+            безалкогольні напої з меню, оформити замовлення страв із доставкою в номер або у вигляді ланч-боксу.
+        </p>
+    </section>
+
+    <section>
+        <div class="Med-center">
+            <div class="nazva-med">
+                <h2 id="medcenter">Медичний центр</h2>
+                <h3>ЗДОРОВ'Я ТА ДОВГОЛІТТЯ</h3>
+            </div>
+
+            <div class="category1">
+
+                <div class="consultations">
+                    <div class="photo-consultations">
+                        <img src="img/main-medical-photo-01.jpg" alt="Фото консультації">
+                    </div>
+                    <button class="button-consultations">Консультації</button>
+                </div>
+
+                <div class="aesthetic-medicine">
+                    <div class="photo-aesthetic-medicine">
+                        <img src="img/main-medical-photo-02.jpg" alt="Фото естетичної медицини">
+                    </div>
+                    <button class="button-aesthetic-medicine">Естетична медицина</button>
+                </div>
+            </div>
+
+            <div class="category1">
+                <div class="laboratory">
+                    <div class="photo-laboratory">
+                        <img src="img/main-medical-photo-03.jpg" alt="Фото лабораторії">
+                    </div>
+                    <button class="button-laboratory">Діагностичга лабораторія</button>
+                </div>
+
+                <div class="rehabilitation">
+                    <div class="photo-rehabilitation">
+                        <img src="img/main-medical-photo-04.jpg" alt="Фото реабілітації">
+                    </div>
+                    <button class="button-rehabilitation">Реабілітація</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="Contacts" id="contacts">
+
+            <div class="info">
+                <div class="nazva-contacts">
+                    <h2>Контакти</h2>
+                    <h3>ЗВ'ЯЗОК ІЗ НАМИ</h3>
+                </div>
+
+                <div class="location">
+                    <div class="box-1">
+                        <div class="icon-location-02">
+                            <img src="img/icon-location-contact.png" alt="Іконка локації 02">
+                        </div>
+                        <h4>АДРЕСА</h4>
+                    </div>
+                    <p>Україна, Львівська обл.,<br>м.Трускавець,<br>вул. Городище, 8</p>
+                </div>
+
+                <div class="phone">
+                    <div class="box-2">
+                        <div class="icon-phone">
+                            <img src="img/icon-phone-contact.png" alt="Іконка телефону 01">
+                        </div>
+                        <h4>ТЕЛЕФОНИ</h4>
+                    </div>
+                    <p>+38 (096) 345 0000<br>
+                        +38 (068) 231 6659</p>
+                </div>
+
+                <div class="message">
+                    <div class="box-3">
+                        <div class="icon-message">
+                            <img src="img/icon-message-contact.png" alt="Іконка повідомлення 01">
+                        </div>
+                        <h4>ЕЛЕКТРОННА АДРЕСА</h4>
+                    </div>
+                    <p>info@rixos.com.ua</p>
+                </div>
+
+                <nav class="social-media">
+                    <div class="instagram-contact">
+                        <img src="img/icon-instagram-contact.png" alt="Інстаграм 01">
+                    </div>
+                    <div class="facebook-contact">
+                        <img src="img/icon-facebook-contact.png" alt="Фейсбук 01">
+                    </div>
+                    <div class="youtube-contact">
+                        <img src="img/icon-youtube-contact.png" alt="Ютуб 01">
+                    </div>
+                </nav>
+
+                <button class="button-contact-us">ЗВ’ЯЗАТИСЯ З НАМИ</button>
+            </div>
+
+            <div class="photo-location">
+                <img src="img/main-location-photo.jpg" alt="Фото локації">
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer">
+        <div class="start-footer">
+            <div class="logo-02">
+                <img src="img/header-photo-01.jpg" alt="Логотип 02">
+            </div>
+            <button class="button-zabronuvaty-02 open-popup">ЗАБРОНЮВАТИ</button>
+        </div>
+
+        <div class="center-footer">
+            <div class="h4-footer-01">
+                <h4>
+                    ПРО ГОТЕЛЬ<br>
+                    НОМЕРИ<br>
+                    ТАРИФИ<br>
+                    ПОСЛУГИ
+                </h4>
+            </div>
+            <div class="h4-footer-02">
+                <h4>
+                    МЕДЦЕНТР<br>
+                    РЕАБІЛІТАЦІЯ
+                </h4>
+            </div>
+            <div class="h4-footer-03">
+                <h4>
+                    НОВИНИ<br>
+                    ПРОПОЗИЦІЇ<br>
+                    ПРАВИЛА<br>
+                    ОБМЕЖЕННЯ
+                </h4>
+            </div>
+
+            <div class="footer-contact">
+                <div class="location-footer">
+                    <div class="icon">
+                        <img src="img/icon-location-footer.png" alt="Іконка локації 03">
+                    </div>
+                    <p class="footer-text">Україна, Львівська обл.,<br>м.Трускавець,<br>вул. Городище, 8</p>
+                </div>
+
+                <div class="location-footer">
+                    <div class="icon">
+                        <img src="img/icon-phone-footer.png" alt="Іконка номеру 02">
+                    </div>
+                    <p class="footer-text">+38 (096) 345 0000<br>
+                        +38 (068) 231 6659</p>
+                </div>
+
+                <div class="location-footer">
+                    <div class="icon-message-02">
+                        <img src="img/icon-message-footer.png" alt="Іконка повідомлення 02">
+                    </div>
+                    <p class="footer-text">info@rixos.com.ua</p>
+                </div>
+            </div>
+        </div>
+
+        <nav class="end-footer">
+            <div class="instagram-footer">
+                <img src="img/icon-instagram-footer.png" alt="Інстаграм 02">
+            </div>
+            <div class="facebook-footer">
+                <img src="img/icon-facebook-footer.png" alt="Фейсбук 02">
+            </div>
+            <div class="youtube-footer">
+                <img src="img/icon-youtube-footer.png" alt="Ютуб 02">
+            </div>
+        </nav>
+    </div>
+</footer>
+</body>
+</html>

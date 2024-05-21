@@ -1,0 +1,1899 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    color: black;
+}
+
+h2 {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    color: black;
+}
+
+h3 {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    color: orange;
+}
+
+h4 {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+
+    text-align: center;
+}
+
+video {
+    margin-bottom: 10px;
+}
+
+
+.logo {
+    width: 180px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.icon-menu {
+    width: 26px;
+}
+
+.icon-menu img {
+    width: 100%;
+}
+
+.icon-location-01 {
+    width: 20px;
+}
+
+.icon-location img {
+    width: 100%;
+}
+
+.header-hotel {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+.header-restaurant {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+}
+
+.header-med {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+}
+
+.UK {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+}
+
+.button-zabronuvaty {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+    background-color: orange;
+    width: 170px;
+    height: 40px;
+    border: none;
+}
+
+.photo-hotel-01 {
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.photo-hotel-01 img {
+    width: 100%;
+}
+
+.photo-hotel-02 {
+    width: 485px;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.photo-hotel-02 img {
+    width: 100%;
+}
+
+.button-details {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+    background-color: orange;
+    width: 170px;
+    height: 40px;
+    border: none;
+}
+
+.photo-hotel-03 {
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.photo-hotel-03 img {
+    width: 100%;
+}
+
+.button-gallery {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+    background-color: transparent;
+    width: 250px;
+    height: 40px;
+    border: none;
+}
+
+.photo-hotel-04 {
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.photo-hotel-04 img {
+    width: 100%;
+}
+
+.button-pereglanuty {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    color: black;
+    background-color: white;
+    width: 140px;
+    height: 30px;
+    border: 1px solid orange;
+}
+
+.button-rooms {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+    background-color: orange;
+    width: 170px;
+    height: 40px;
+    border: none;
+    padding-top: 5px;
+    margin-left: 60px;
+}
+
+.rooms_wrapper.a {
+    width: 75%;
+    min-height: 500px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.rooms_block {
+    width: 32%;
+    height: 70%;
+    background-color: white;
+    margin: 10px;
+    position: relative;
+}
+.rooms_block:hover::after{
+    position: absolute;
+    content:"";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+
+.rooms_img {
+
+    width: 100%;
+    height: 50%;
+}
+
+
+.rooms {
+    border: none;
+    background-color: white;
+    display: none;
+    cursor: pointer;
+}
+
+
+.rooms.active {
+    display: flex;
+}
+
+
+.rooms_text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-between;
+    padding: 10px;
+}
+
+.rooms_title {
+    color: orange;
+    font-size: 25px;
+    margin: 20px auto;
+}
+
+.rooms_footer {
+    margin: 0 auto;
+}
+
+
+
+.photo-restaurant-01 {
+    width: 400px;
+
+}
+
+.photo-restaurant-01 img {
+    width: 100%;
+}
+
+.photo-restaurant-02 {
+    width: 400px;
+
+}
+
+.photo-restaurant-02 img {
+    width: 100%;
+}
+
+.photo-restaurant-03 {
+    width: 400px;
+
+}
+
+.photo-restaurant-03 img {
+    width: 100%;
+}
+
+
+.photo-consultations {
+    width: 534px;
+}
+
+.photo-consultations img {
+    width: 100%;
+}
+
+.photo-aesthetic-medicine {
+    width: 534px;
+}
+
+.photo-aesthetic-medicine img {
+    width: 100%;
+}
+
+.photo-laboratory {
+    width: 534px;
+}
+
+.photo-laboratory img {
+    width: 100%;
+}
+
+.photo-rehabilitation {
+    width: 534px;
+}
+
+.photo-rehabilitation img {
+    width: 100%;
+}
+
+
+.menu {
+    border: none;
+    background-color: white;
+    display: none;
+    cursor: pointer;
+}
+
+
+.menu-btn {
+    display: none;
+
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    z-index: 6;
+    margin-right: 30px;
+
+}
+
+.menu-btn span {
+    width: 35px;
+    height: 3px;
+    position: fixed;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #C7A17A;
+    transition: all 0.5s;
+}
+
+.menu-btn span:nth-of-type(2) {
+    top: calc(50% - 5px);
+}
+
+.menu-btn span:nth-of-type(3) {
+    top: calc(50% + 5px);
+}
+
+.menu-btn.active {
+    position: fixed;
+    right: 30px;
+    top: 20px;
+}
+
+.menu-btn.active span:nth-of-type(1) {
+    display: none;
+}
+
+.menu-btn.active span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);
+    background-color: #14141D;
+}
+
+.menu-btn.active span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg);
+    background-color: #14141D;
+}
+
+.menu.active {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding: 10%;
+    background: #a0623d;
+    transform: translateX(200%);
+    transition: transform 0.5s;
+    text-transform: uppercase;
+
+    font-weight: 200;
+    font-size: 35px;
+    z-index: 5;
+}
+
+.menu-link {
+    color: #14141D;
+
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.menu-list1 {
+    margin-bottom: 80px;
+}
+
+.menu-list2 {
+    margin-bottom: 80px;
+}
+
+.menu-list3 {
+    margin-bottom: 130px;
+}
+
+.btn-rezerv {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.popup__bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s all;
+    z-index: 6;
+
+}
+
+.popup__bg.active {
+'active' opacity: 1;
+    pointer-events: all;
+    transition: 0.5s all;
+    opacity: 1;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 600px;
+    padding: 25px;
+    transition: 0.5s all;
+}
+
+.popup.active {
+    transform: translate(-50%, -50%) scale(1);
+    transition: 0.5s all;
+}
+
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.popup label {
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.popup .label__text {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #cfd0d3;
+    margin-bottom: 5px;
+}
+
+.popup input {
+    height: 45px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #cfd0d3;
+}
+
+.popup input:focus {
+    border-bottom: 1px solid #ae7328;
+}
+
+.popup input:focus + .label__text {
+    color: #ae7328;
+}
+
+.popup textarea {
+    resize: none;
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #cfd0d3;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.popup textarea:focus {
+    border-bottom: 1px solid #ae7328;
+}
+
+.popup textarea:focus + .label__text {
+    color: #ae7328;
+}
+
+.popup button {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    border: 2px solid #ae7328;
+    background: #ae7328;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s all;
+}
+
+.popup button:hover {
+    background: #fff;
+    color: #a9824f;
+    transition: 0.5s all;
+}
+
+
+.button-consultations {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    width: 250px;
+    height: 40px;
+    border: none;
+}
+
+.button-aesthetic-medicine {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    width: 250px;
+    height: 40px;
+    border: none;
+}
+
+.button-laboratory {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    width: 300px;
+    height: 40px;
+    border: none;
+}
+
+.button-rehabilitation {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    width: 250px;
+    height: 40px;
+    border: none;
+}
+
+.icon-phone {
+    width: 26px;
+    margin-right: 5px;
+}
+
+.icon-phone img {
+    width: 100%;
+}
+
+.icon-message {
+    width: 26px;
+    margin-right: 5px;
+}
+
+.icon-message img {
+    width: 100%;
+}
+
+.button-contact-us {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+    background-color: orange;
+    width: 250px;
+    height: 40px;
+    border: none;
+}
+
+.photo-location {
+    width: 677px;
+}
+
+.photo-location img {
+    width: 100%;
+}
+
+.footer {
+    background-color: #233142;
+}
+
+.logo-02 {
+    width: 180px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-02 img {
+    width: 100%;
+}
+
+.button-zabronuvaty-02 {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    width: 250px;
+    height: 40px;
+    border: 1px solid orange;
+}
+
+.h4-footer-01 {
+    color: white;
+}
+
+.h4-footer-02 {
+    color: white;
+}
+
+.h4-footer-03 {
+    color: white;
+}
+
+.footer-text {
+    color: white;
+}
+
+
+.start-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+
+.center-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+
+.location-footer {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.end-footer {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.end-footer img {
+    width: 26px;
+    margin-right: 10px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.UK {
+    margin-right: 50px;
+}
+
+.header-hotel {
+    margin-right: 50px;
+}
+
+.header-restaurant {
+    margin-right: 50px;
+}
+
+.header-med {
+    margin-right: 50px;
+}
+
+.icon-menu {
+    margin-right: 50px;
+}
+
+.icon-location-01 {
+    margin-right: 50px;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+h3 {
+    margin-bottom: 5px;
+}
+
+.button-details {
+    margin-top: 20px;
+}
+
+.photo-hotel-01 {
+    margin-bottom: 80px;
+}
+
+.znayomstvo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 80px;
+    margin-right: 60px;
+}
+
+.photo-hotel-03 {
+    margin-top: 80px;
+}
+
+.button-gallery {
+    margin-left: 60px;
+}
+
+.Rooms {
+    margin-top: 80px;
+}
+
+.nazva {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 60px;
+}
+
+.details-description {
+    display: flex;
+    flex-direction: row;
+}
+
+.guests {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.icon-guests {
+    width: 20px;
+}
+
+.icon-space {
+    width: 20px;
+}
+
+.icon-rooms {
+    width: 20px;
+}
+
+.space {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.room {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.double-room {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.classic {
+    margin-bottom: 10px;
+}
+
+.button-pereglanuty {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nazva-restaurant {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Restaurant {
+    margin-top: 80px;
+}
+
+.two-photos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+.text-restaurant {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+
+.nazva-med {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.consultations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-consultations {
+    margin-top: 10px;
+}
+
+.aesthetic-medicine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-aesthetic-medicine {
+    margin-top: 5px;
+}
+
+.laboratory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-laboratory {
+    margin-top: 10px;
+}
+
+.rehabilitation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-rehabilitation {
+    margin-top: 10px;
+}
+
+.category1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.category2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.Contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.icon-location {
+    width: 26px;
+}
+
+.box-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.box-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.box-3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.instagram-contact {
+    width: 26px;
+    margin-right: 10px;
+}
+
+.instagram-contact img {
+    width: 100%;
+}
+
+.facebook-contact {
+    width: 26px;
+    margin-right: 10px;
+}
+
+.facebook-contact img {
+    width: 100%;
+}
+
+.youtube-contact {
+    width: 26px;
+}
+
+.youtube-contact img {
+    width: 100%;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+}
+
+.icon-location-02 {
+    width: 26px;
+    margin-right: 5px;
+}
+
+.icon-location-02 img {
+    width: 100%;
+}
+
+.button-contact-us {
+    margin-top: 10px;
+}
+
+.location {
+    margin-bottom: 10px;
+}
+
+.phone {
+    margin-bottom: 10px;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+.icon {
+    width: 26px;
+}
+
+.icon img {
+    width: 100%;
+}
+
+.icon-message-02 {
+    width: 26px;
+    margin-right: 5px;
+}
+
+.icon-message-02 img {
+    width: 100%;
+}
+
+
+.instagram-footer {
+    width: 26px;
+    margin-right: 10px;
+}
+
+.instagram-footer img {
+    width: 100%;
+}
+
+.facebook-footer {
+    width: 26px;
+    margin-right: 10px;
+}
+
+.facebook-footer img {
+    width: 100%;
+}
+
+.youtube-footer {
+    width: 26px;
+}
+
+.youtube-footer img {
+    width: 100%;
+}
+
+.end-footer {
+    margin-top: 10px;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+.head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.menu-med {
+    position: absolute;
+    left: 0;
+    width: 180px;
+    background: white;
+    border: 1px solid rgba(0, 0, 0);
+    display: none;
+}
+
+.header-med {
+    position: relative;
+    display: inline-block;
+}
+
+.header-med ul {
+    display: none;
+    position: absolute;
+}
+
+.header-med:hover ul {
+    display: block;
+}
+
+
+.menu-hotel {
+    position: absolute;
+    left: 0;
+    width: 180px;
+    background: white;
+    border: 1px solid rgba(0, 0, 0);
+    display: none;
+}
+
+.header-hotel {
+    position: relative;
+    display: inline-block;
+}
+
+.header-hotel ul {
+    display: none;
+    position: absolute;
+}
+
+.header-hotel:hover ul {
+    display: block;
+}
+
+
+.menu-restaurant {
+    position: absolute;
+    left: 0;
+    width: 180px;
+    background: white;
+    border: 1px solid rgba(0, 0, 0);
+    display: none;
+}
+
+.header-restaurant {
+    position: relative;
+    display: inline-block;
+}
+
+.header-restaurant ul {
+    display: none;
+    position: absolute;
+}
+
+.header-restaurant:hover ul {
+    display: block;
+}
+
+
+@media (max-width: 1350px) {
+    .button-rooms {
+        margin-left: 60px;
+    }
+
+    .text {
+        margin-right: 60px;
+    }
+
+    .two-photos {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .text-restaurant {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .details-description {
+        margin-top: 10px;
+    }
+
+    .two-photos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo-restaurant-01 {
+        width: 1180px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .photo-restaurant-02 {
+        width: 1180px;
+        margin-bottom: 20px;
+    }
+
+    .photo-restaurant-03 {
+        width: 1180px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .photo-restaurant-01 {
+        width: 1130px;
+    }
+
+    .photo-restaurant-02 {
+        width: 1130px;
+    }
+
+    .photo-restaurant-03 {
+        width: 1130px;
+    }
+
+    .photo-consultations {
+        width: 500px;
+    }
+
+    .photo-aesthetic-medicine {
+        width: 500px;
+    }
+
+    .photo-laboratory {
+        width: 500px;
+    }
+
+    .photo-rehabilitation {
+        width: 500px;
+    }
+
+}
+
+
+@media (max-width: 1200px) {
+    .znayomstvo {
+        margin-top: 30px;
+    }
+
+    .photo-hotel-01 {
+        margin-bottom: 0;
+    }
+
+    .photo-hotel-04 {
+        margin-bottom: 0;
+    }
+
+    .button-rooms {
+        margin-left: 60px;
+    }
+
+    .text-restaurant {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .text {
+        margin-right: 60px;
+    }
+
+    .two-photos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo-restaurant-01 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 600px;
+    }
+
+    .photo-restaurant-02 {
+        margin-bottom: 10px;
+        width: 600px;
+    }
+
+    .photo-restaurant-03 {
+        width: 600px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .photo-consultations {
+        width: 450px;
+    }
+
+    .photo-aesthetic-medicine {
+        width: 450px;
+    }
+
+    .photo-laboratory {
+        width: 450px;
+    }
+
+    .photo-rehabilitation {
+        width: 450px;
+    }
+
+    .photo-location {
+        width: 600px;
+    }
+
+}
+
+
+@media (max-width: 1100px) {
+    .head {
+        margin-bottom: 0px;
+    }
+
+    .znayomstvo {
+        margin-top: 40px;
+        margin-bottom: 0px;
+    }
+
+    .gallery {
+        margin-top: 40px;
+    }
+
+    .b-gallery {
+        margin-bottom: 10px;
+    }
+
+    .photo-hotel-03 {
+        margin-top: 0px;
+    }
+
+    .Rooms {
+        margin-top: 40px;
+    }
+
+    .Restaurant {
+        margin-top: 40px;
+    }
+
+    .category1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .consultations {
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .aesthetic-medicine {
+        margin-bottom: 15px;
+    }
+
+    .laboratory {
+        margin-bottom: 15px;
+    }
+
+    .Contacts {
+        margin-top: 40px;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .znayomstvo, .category1 {
+        flex-direction: column;
+    }
+
+    .Contacts {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text {
+        margin-top: 20px;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    /*.burger{*/
+    /*    position: absolute;*/
+    /*    top: 100%;*/
+    /*    left: 0;*/
+    /*    width: 100%;*/
+    /*    padding: 0 2rem;*/
+    /*    background-color: white;*/
+    /*    border-top: black;*/
+    /*    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);*/
+    /*}*/
+    /*.burger a{*/
+    /*    display: block;*/
+    /*}*/
+    /*.burger .active{*/
+    /*    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);*/
+    /*}*/
+    .menu-btn {
+        display: block;
+        width: 50px;
+        height: 39px;
+        position: relative;
+        z-index: 6;
+        overflow: hidden;
+        cursor: pointer;
+
+    }
+
+    .menu-btn span {
+        width: 60px;
+        height: 4px;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: black;
+        transition: all 0.5s;
+    }
+
+    .menu-btn span:nth-of-type(2) {
+        top: calc(50% - 5px);
+    }
+
+    .menu-btn span:nth-of-type(3) {
+        top: calc(50% + 5px);
+    }
+
+    .menu.active {
+        transform: translateX(0);
+    }
+
+    .menu li {
+        list-style-type: none;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .menu-med li {
+        background: #a0623d;
+        border-right: 1px solid rgba(0, 0, 0);
+        padding-right: 5px;
+    }
+
+    .menu-hotel li {
+        background: #a0623d;
+        border-right: 1px solid rgba(0, 0, 0);
+        padding-right: 5px;
+    }
+
+    .menu-restaurant li {
+        background: #a0623d;
+        border-right: 1px solid rgba(0, 0, 0);
+        padding-right: 5px;
+    }
+
+    .menu-restaurant, .menu-med, .menu-hotel {
+        border: 0px solid rgba(0, 0, 0);
+    }
+
+    .popup {
+        width: 80%;
+    }
+
+    .text {
+        margin-bottom: 10px;
+    }
+
+    .info {
+        margin-bottom: 10px;
+    }
+
+    .photo-location {
+        width: 534px;
+    }
+
+    .Contacts {
+        margin-bottom: 40px;
+    }
+
+    .photo-location {
+        width: 450px;
+    }
+
+    .rooms_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .text {
+        margin-left: 60px;
+    }
+}
+
+@media (max-width: 700px) {
+    .photo-restaurant-01 {
+        width: 530px;
+    }
+
+    .photo-restaurant-02 {
+        width: 530px;
+    }
+
+    .photo-restaurant-03 {
+        width: 530px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .photo-restaurant-01 {
+        width: 480px;
+    }
+
+    .photo-restaurant-02 {
+        width: 480px;
+    }
+
+    .photo-restaurant-03 {
+        width: 480px;
+    }
+
+    .photo-consultations {
+        width: 480px;
+    }
+
+    .photo-aesthetic-medicine {
+        width: 480px;
+    }
+
+    .photo-laboratory {
+        width: 480px;
+    }
+
+    .photo-rehabilitation {
+        width: 480px;
+    }
+
+    .photo-location {
+        width: 480px;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .photo-hotel-02 {
+        width: 430px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    .photo-restaurant-01 {
+        width: 430px;
+    }
+
+    .photo-restaurant-02 {
+        width: 430px;
+    }
+
+    .photo-restaurant-03 {
+        width: 430px;
+    }
+
+    .photo-consultations {
+        width: 430px;
+    }
+
+    .photo-aesthetic-medicine {
+        width: 430px;
+    }
+
+    .photo-laboratory {
+        width: 430px;
+    }
+
+    .photo-rehabilitation {
+        width: 430px;
+    }
+
+    .photo-location {
+        width: 430px;
+    }
+
+    .center-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-02 {
+        margin-left: 60px;
+    }
+
+    .h4-footer-01 {
+        margin-bottom: 20px;
+    }
+
+    .h4-footer-02 {
+        margin-bottom: 20px;
+    }
+
+    .h4-footer-03 {
+        margin-bottom: 20px;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    .photo-hotel-02 {
+        width: 380px;
+    }
+
+    .photo-consultations {
+        width: 380px;
+    }
+
+    .photo-aesthetic-medicine {
+        width: 380px;
+    }
+
+    .photo-laboratory {
+        width: 380px;
+    }
+
+    .photo-rehabilitation {
+        width: 380px;
+    }
+
+    .photo-restaurant-01 {
+        width: 380px;
+    }
+
+    .photo-restaurant-02 {
+        width: 380px;
+    }
+
+    .photo-restaurant-03 {
+        width: 380px;
+    }
+
+    .photo-location {
+        width: 380px;
+    }
+
+    .icon-menu {
+        margin-right: 15px;
+    }
+
+    .icon-location-01 {
+        margin-right: 15px;
+    }
+
+    .UK {
+        margin-right: 15px;
+    }
+
+    .photo-consultations {
+        width: 380px;
+    }
+
+    .photo-aesthetic-medicine {
+        width: 380px;
+    }
+
+    .photo-laboratory {
+        width: 380px;
+    }
+
+    .photo-rehabilitation {
+        width: 380px;
+    }
+
+    .rooms_block{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .photo-hotel-02 {
+        width: 330px;
+    }
+
+    .photo-restaurant-01 {
+        width: 330px;
+    }
+
+    .photo-restaurant-02 {
+        width: 330px;
+    }
+
+    .photo-restaurant-03 {
+        width: 330px;
+    }
+
+    .logo-02 {
+        width: 150px;
+    }
+
+    .photo-consultations {
+        width: 330px;
+    }
+
+    .photo-aesthetic-medicine {
+        width: 330px;
+    }
+
+    .photo-laboratory {
+        width: 330px;
+    }
+
+    .photo-rehabilitation {
+        width: 330px;
+    }
+
+    .photo-location {
+        width: 330px;
+    }
+
+    .icon-location-01 {
+        display: none;
+    }
+
+    .logo-02 {
+        display: none;
+    }
+
+    .footer-contact {
+        display: none;
+    }
+
+    .end-footer {
+        justify-content: center;
+    }
+
+    .start-footer {
+        margin-top: 30px;
+    }
+
+    .end-footer {
+        margin-top: 0px;
+    }
+
+    .start-footer {
+        justify-content: center;
+    }
+
+    .button-zabronuvaty-02 {
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .photo-hotel-02 {
+        width: 280px;
+    }
+
+    .logo-02 {
+        width: 100px;
+    }
+
+    .photo-restaurant-01 {
+        width: 280px;
+    }
+
+    .photo-restaurant-02 {
+        width: 280px;
+    }
+
+    .photo-restaurant-03 {
+        width: 280px;
+    }
+
+    .photo-consultations {
+        width: 280px;
+    }
+
+    .photo-aesthetic-medicine {
+        width: 280px;
+    }
+
+    .photo-laboratory {
+        width: 280px;
+    }
+
+    .photo-rehabilitation {
+        width: 280px;
+    }
+
+    .photo-location {
+        width: 280px;
+    }
+
+    .logo-02 {
+        display: none;
+    }
+}
+
+@media (max-width: 350px) {
+    .icon-location-01 {
+        display: none;
+    }
+
+    .button-zabronuvaty {
+        display: none;
+    }
+
+    .photo-hotel-02s {
+        width: 100px;
+    }
+
+    .UK {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 320px) {
+    .photo-hotel-02 {
+        width: 230px;
+    }
+
+    .photo-location {
+        width: 230px;
+    }
+
+    .photo-restaurant-01 {
+        width: 230px;
+    }
+
+    .photo-restaurant-02 {
+        width: 230px;
+    }
+
+    .photo-restaurant-03 {
+        width: 230px;
+    }
+
+    .photo-consultations {
+        width: 230px;
+    }
+
+    .photo-aesthetic-medicine {
+        width: 230px;
+    }
+
+    .photo-laboratory {
+        width: 230px;
+    }
+
+    .photo-rehabilitation {
+        width: 230px;
+    }
+
+}
+
+
+
+
+
+
+
+
